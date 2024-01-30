@@ -7,13 +7,13 @@ This repository contains the terraform module for AWS EFS
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 4.34 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.67.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.0 |
 
 ## Resources
 
@@ -50,10 +50,11 @@ This repository contains the terraform module for AWS EFS
 
 | Name | Description |
 |------|-------------|
-| <a name="output_efs_arn"></a> [efs\_arn](#output\_efs\_arn) | The Amazon Resource Name (ARN) of the file system. |
-| <a name="output_efs_dns_name"></a> [efs\_dns\_name](#output\_efs\_dns\_name) | DNS name for the EFS file system. |
-| <a name="output_efs_id"></a> [efs\_id](#output\_efs\_id) | The ID that identifies the file system. |
+| <a name="output_arn"></a> [arn](#output\_arn) | The Amazon Resource Name (ARN) of the file system. |
+| <a name="output_dns_name"></a> [dns\_name](#output\_dns\_name) | DNS name for the EFS file system. |
+| <a name="output_id"></a> [id](#output\_id) | The ID that identifies the file system. |
 | <a name="output_mount_target_ids"></a> [mount\_target\_ids](#output\_mount\_target\_ids) | List of the mount target IDs. |
+| <a name="output_security_group_id"></a> [security\_group\_id](#output\_security\_group\_id) | ID of the security group that is associated with the mount target. |
 | <a name="output_security_group_name"></a> [security\_group\_name](#output\_security\_group\_name) | Name of the security group that is associated with the mount target. |
 | <a name="output_security_groups"></a> [security\_groups](#output\_security\_groups) | List of security groups that are associated with the mount target. |
 <!-- END_TF_DOCS -->
